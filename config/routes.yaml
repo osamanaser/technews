@@ -1,0 +1,7 @@
+home:
+    path: /
+    controller: App\Controller\TechNews\DefaultController::index
+
+contact:
+    path: /pages/contact.html
+    controller: App\Controller\TechNews\DefaultController::contact

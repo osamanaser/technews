@@ -1,0 +1,48 @@
+article1:
+    id: 1
+    titre: "Intérim, nouvelle élection : comment va s'organiser la succession de Laurent Wauquiez à la tête des Républicains ?"
+    contenu: "<p>Selon les statuts du parti, c'est son vice-président, Jean Leonetti, qui est chargé d'assurer l'intérim. Avant un scrutin pour désigner le nouveau leader, dont la date reste à déterminer.</p>"
+    featuredImage: "19426871.jpg"
+    categorie:
+        id: 1
+        nom: Politique
+    auteur:
+        id: 1
+        prenom: "Hugo"
+        nom: "LIEGEARD"
+article2:
+    id: 2
+    titre: "Irak : les deux derniers Français jugés pour appartenance à l'Etat islamique sont également condamnés à mort"
+    contenu: "<p>Bilel Kabaoui et Mourad Delhomme ont écopé de la peine capitale après leur procès devant le tribunal antiterroriste de Bagdad. Au total, onze Français ont été condamnés à mort par la justice irakienne.</p>"
+    featuredImage: "19428903.jpg"
+    categorie:
+        id: 1
+        nom: Politique
+    auteur:
+        id: 1
+        prenom: "Hugo"
+        nom: "LIEGEARD"
+article3:
+    id: 3
+    titre: "Greta Thunberg arrête l'école pendant un an pour se consacrer à son engagement en faveur du climat"
+    contenu: "<p>L’adolescente suédoise de 16 ans va se consacrer durant son année sabbatique à son combat contre le réchauffement climatique.</p>"
+    featuredImage: "19429607.jpg"
+    categorie:
+        id: 1
+        nom: Politique
+    auteur:
+        id: 1
+        prenom: "Hugo"
+        nom: "LIEGEARD"
+article4:
+    id: 4
+    titre: "Le combat des Japonaises pour en finir avec l'obligation des talons hauts au bureau"
+    contenu: "<p>La campagne #KuToo, qui joue avec les mots kutsu (chaussure) et kutsuu (douleur) a été lancée par l'actrice Yumi Ishikawa et a rapidement remporté le soutien de 19.000 personnes sur la toile.</p>"
+    featuredImage: "19429063.jpg"
+    categorie:
+        id: 1
+        nom: Politique
+    auteur:
+        id: 1
+        prenom: "Hugo"
+        nom: "LIEGEARD"

@@ -1,0 +1,67 @@
+{% extends "layout.html.twig" %}
+
+{% block page_title %}
+    Accueil
+{% endblock %}
+
+{% block content %}
+
+{#{{ dump( articles ) }}#}
+
+<div class="row">
+    <!--colleft-->
+    <div class="col-md-8 col-sm-12">
+        <div class="box-caption">
+            <span>spotlight</span>
+        </div>
+        <!--spotlight-->
+        <section class="owl-carousel owl-spotlight">
+            {% for article in spotlight %}
+                <div>
+                    <article class="spotlight-item">
+                        <div class="spotlight-img">
+                            <img alt="{{ article.titre }}" src="{{ asset('images/product/' ~ article.featuredImage ) }}" class="img-responsive"/>
+                            <a href="#" class="cate-tag">{{ article.categorie.nom }}</a>
+                        </div>
+                        <div class="spotlight-item-caption">
+                            <h2 class="font-heading">
+                                <a href="{{ path('default_article', {
+                                    'categorie' : article.categorie.slug,
+                                    'slug' : article.slug,
+                                    'id' : article.id
+                                }) }}">
+                                    {{ article.titre }}
+                                </a>
+                            </h2>
+                            <div class="meta-post">
+                                <a href="#">
+                                    {{ article.membre.prenom ~ ' ' ~ article.membre.nom }}
+                                </a>
+                                <em></em>
+                                <span>
+							{{ article.dateCreation|date("d/m/Y") }}
+						</span>
+                            </div>
+                            {{ article.contenu | slice(0, 100) | raw }}...
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </section>
+
+        <!--spotlight-thumbs-->
+        <section class="spotlight-thumbs">
+            <div class="row">
+                {% for article in articles %}
+                    {% include 'components/_spotlight-thumbs.html.twig' %}
+                {% endfor %}
+            </div>
+        </section>
+
+    </div>
+
+    {# Include de la sidebar #}
+    {#{% include 'components/_sidebar.html.twig' %}#}
+    {{ render(controller('App\\Controller\\TechNews\\DefaultController::sidebar')) }}
+
+    {% endblock %}
